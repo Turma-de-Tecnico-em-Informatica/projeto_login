@@ -67,17 +67,26 @@ input {
 }
 
 
-button {
-        width: 95%;
-        padding: 10px;
-        background: #007bff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+/* Tema Céu (normal) */
+.btn {
+  background: #004a8f; /* azul */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
 }
-button:hover {
-              background: #0056b3;
+
+/* Tema Inferno */
+body.inferno .btn {
+  background: red;
+  box-shadow: 0 0 10px red;
+}
+
+/* Efeito hover */
+.btn-login:hover {
+  opacity: 0.9;
 }
 
 
