@@ -8,13 +8,35 @@
 body {
       min-height: 100vh;
       width: 100%;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
       overflow: hidden;
+      background: linear-gradient(135deg, #87cefa, #b0e0e6, #ffffff);
 }
+
+/* ===== TEMA INFERNO ===== */
+body.inferno {
+    background: linear-gradient(135deg, #2c0000, #550000, #000000);
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+body.inferno .container {
+    background: rgba(255, 0, 0, 0.08);
+    box-shadow: 0 0 40px red;
+}
+
 
 .container {
 	    width: 350px;
@@ -29,8 +51,12 @@ body {
 h2 {
     font-size: 2.5rem;
     margin-bottom: 12px;
-    color: #00e5ff;
+    color: #004a8f;
 }
+
+ body.inferno h2 {
+      color: #ff2a2a;
+    }
 
 input {
        width: 90%;
@@ -72,12 +98,16 @@ a:hover { text-decoration: underline; }
 h1 {
     font-size: 2.5rem;
     margin-bottom: 12px;
-    color: #00e5ff;
+    color: #004a8f;
 }
+
+ body.inferno h1 {
+      color: #ff2a2a;
+    }
 
 p {
    font-size: 1.1rem;
-   margin-bottom: 40px;
+   margin-bottom: 20px;
    opacity: 0.9;
 }
 
@@ -85,6 +115,7 @@ p {
 position: relative;
 height: 200px;
 overflow: hidden;
+margin: 20px 0;
 }
 
 .name {
@@ -137,6 +168,24 @@ footer {
         margin-top: 30px;
         font-size: 0.85rem;
         opacity: 0.6;
+}
+
+/* BOTÃO DE TROCA DE TEMA */
+.theme-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    background: #004a8f;
+    color: white;
+}
+
+body.inferno .theme-btn {
+    background: #ff0000;
+    box-shadow: 0 0 10px red;
 }
 
 @media (max-width: 600px) {
